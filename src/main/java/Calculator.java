@@ -14,7 +14,7 @@ public class Calculator {
     void choiceOperation() {
         boolean calculate = true;
         Scanner scan = new Scanner(in);
-        byte number = 0;
+        byte number;
 
         while (calculate) {
             System.out.println("Wybierz numer działania, które chcesz wykonać:");
@@ -127,7 +127,7 @@ public class Calculator {
         System.out.println("Podaj liczbę wyrazów do połącznia (max 20):");
         Scanner scan2 = new Scanner(in);
         String sentence = "";
-        String word = "";
+        String word;
         byte count = scan2.nextByte();
         while (count < 2 || count > 20) {
             System.out.println("Podaj liczbę od 2 do 20:");
