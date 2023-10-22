@@ -4,8 +4,9 @@ import org.junit.jupiter.api.Test;
 class CalculatorTest {
 
     @Test
-    void choiceOperation() {
+    void roundTo4DecimalPlace() {
         double testValue = 4.5565327;
-        Assertions.assertEquals(4.5565, Calculator.roundTo4DecimalPlace(testValue));
+        double result = Calculator.roundTo4DecimalPlace(testValue);
+        Assertions.assertEquals(4.5565, result);
     }
 }
