@@ -1,13 +1,13 @@
-import junit.framework.TestCase;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-public class CalculatorTest extends TestCase {
+import static org.junit.jupiter.api.Assertions.*;
 
-    public void testChoiceOperation() {
+class CalculatorTest {
 
-    }
-
-    public void testRoundTo4DecimalPlace() {
+    @Test
+    void choiceOperation() {
         double testValue = 4.5565327;
-        assertEquals(4.5565, Calculator.roundTo4DecimalPlace(testValue));
+        Assertions.assertEquals(4.5565, Calculator.roundTo4DecimalPlace(testValue));
     }
 }
